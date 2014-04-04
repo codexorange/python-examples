@@ -14,12 +14,14 @@ def runServer():
 
 		# Imprimimos el mensaje de que el servidor esta corriendo. Se correra con el metodo 
 		# serve_forever()
-		print "Python Web Server is running at the port " + PORT
+		print "Servidor en Python esta corriendo en el puerto : " + PORT
 		httpd.serve_forever()
+		
 	except (KeyboardInterrupt, SystemExit):
-		print "Exiting..."
+		print "Saliendo..."
 		sys.exit
+		
 	except:
-		print "There was a problem starting the webserver at port " + PORT
+		print "Ha ocurrido un problema al iniciar el servidor en el puerto : " + PORT
 
 runServer()
